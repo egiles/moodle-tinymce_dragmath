@@ -44,7 +44,7 @@ if (array_key_exists($lang, $langmapping)) {
     $lang = $langmapping[$lang];
 }
 
-if (!file_exists("$CFG->dirroot/lib/dragmath/applet/lang/$lang.xml")) {
+if (!file_exists("$CFG->dirroot/lib/editor/tinymce/plugins/dragmath/lib/DragMath/applet/lang/$lang.xml")) {
     $lang = 'en';
 }
 
@@ -69,7 +69,7 @@ header('X-UA-Compatible: IE=edge');
 <body>
 
 <object type="application/x-java-applet" id="dragmath" width="520" height="300">
-    <param name="java_codebase" value="<?php echo $relroot.'/lib/dragmath/applet/' ?>" />
+    <param name="java_codebase" value="<?php echo $relroot.'/lib/editor/tinymce/plugins/dragmath/lib/DragMath/applet/' ?>" />
     <param name="java_code" value="Display/MainApplet.class" />
     <param name="java_archive" value="DragMath.jar,lib/AbsoluteLayout.jar,lib/swing-layout-1.0.jar,lib/jdom.jar,lib/jep.jar" />
     <param name="language" value="<?php echo $lang; ?>" />

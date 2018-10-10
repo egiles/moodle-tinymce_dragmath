@@ -30,3 +30,4 @@ $string['title'] = 'DragMath Equation Editor';
 
 /* All lang strings used from TinyMCE JavaScript code must be named 'pluginname:stringname', no need to create langs/en_dlg.js */
 $string['dragmath:desc'] = 'Insert equation';
+$string['privacy:metadata'] = 'Tab topic course format does not store any personal data.';
